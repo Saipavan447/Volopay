@@ -1,0 +1,199 @@
+.card-container {
+  display: flex;
+  flex-direction: row;
+}
+.card-section {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 500px;
+  margin-top: 30px;
+  margin-left: 70px;
+  border-radius: 6px;
+  padding: 15px;
+}
+.search-filter {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 65px;
+  margin-top: 20px;
+  flex-direction: row;
+  position: relative;
+}
+.search-bar {
+  margin-left: 500px;
+  padding: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition-duration: 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+.input {
+  width: 0px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  line-height: 40px;
+  font-size: 15px;
+  height: 45px;
+  background-color: transparent;
+  outline: none;
+  height: 100%;
+  float: left;
+  transition-duration: 0.05s;
+}
+.search-button {
+  background-color: transparent;
+  padding: 0px 0px 0px 0px;
+  margin: 0;
+  height: 45px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  text-decoration: none;
+  border: none;
+  height: 100%;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.search-bar:hover > .input {
+  padding: 0px 10px 0px 10px;
+  width: 200%;
+  transition-duration: 0.2s;
+}
+.search-bar:hover > .search-button {
+  transition-duration: 0.2s;
+}
+.search-btn:hover {
+  background-color: black;
+  transition-duration: 0.2s;
+}
+
+.filter-button {
+  border: none;
+  cursor: pointer;
+  border: 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  width: 80px;
+  padding-left: 10px;
+  height: 35px;
+}
+
+.card-section-top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.card-section-top-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-section-top-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.title {
+  margin: 0px;
+  font-size: 20px;
+  width: max-content;
+}
+.name {
+  margin: 0px;
+  color: #a8a7a7;
+  width: max-content;
+}
+.subscription {
+  margin: 0px;
+  border: 2px solid #dddddd;
+  width: max-content;
+  padding: 5px;
+  color: #a8a7a7;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 5px;
+}
+.subscription-icon {
+  background-color: rgb(219, 214, 214);
+  color: red;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.sub-icon-burner-display {
+  display: block;
+}
+
+.sub-icon-burner-none {
+  display: none;
+}
+.sub-icon-sub-display {
+  display: block;
+}
+
+.sub-icon-sub-none {
+  display: none;
+}
+.date {
+  color: #a8a7a7;
+  margin-bottom: 0px;
+}
+.mb-3 {
+  display: block;
+  width: 400px;
+}
+.progress-bar-container {
+  width: 460px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.bottom-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottom-section-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.spent-color {
+  background-color: rgb(224, 64, 64);
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  text-align: center;
+  color: rgb(224, 64, 64);
+}
+.ava-color {
+  background-color: #198754;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  text-align: center;
+  color: #198754;
+}
+.bottom-section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}

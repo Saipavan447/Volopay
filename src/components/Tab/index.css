@@ -1,0 +1,56 @@
+.tab-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 30px;
+  justify-content: space-between;
+  margin-right: 50px;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 50px;
+
+  margin-top: 20px;
+}
+.tab-section-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 10px;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+}
+.your {
+  padding-right: 10px;
+  color: #dddddd;
+  cursor: pointer;
+  text-decoration: none;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+}
+.all {
+  padding-right: 10px;
+  color: #dddddd;
+  cursor: pointer;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+  text-decoration: none;
+}
+.blocked {
+  padding-right: 10px;
+  color: #dddddd;
+  cursor: pointer;
+  text-decoration: none;
+}
+.tab-section-2 {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+.icon-3 {
+  margin-right: 4px;
+}
+.icon-4 {
+  margin-left: 5px;
+}

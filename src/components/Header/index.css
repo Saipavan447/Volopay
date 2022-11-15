@@ -1,0 +1,46 @@
+.nav-sections {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 55px;
+}
+.nav-section-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.virtual {
+  margin-right: 10px;
+}
+.learn {
+  margin-left: 10px;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  display: flex;
+  font-size: 18px;
+  color: rgb(47, 47, 226);
+}
+.icon-1 {
+  margin-right: 10px;
+  margin-top: 2px;
+}
+.icon-2 {
+  margin-right: 5px;
+}
+.virtual-button {
+  width: 120px;
+  background-color: transparent;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  padding-top: 2px;
+}
