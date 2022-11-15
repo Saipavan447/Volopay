@@ -48,7 +48,7 @@
   "scripts": {
     "start": "craco start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d bulid",
+    "deploy": "gh-pages -d build",
     "build": "craco build",
     "test": "craco test",
     "lint": "eslint .",
