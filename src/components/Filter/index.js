@@ -8,22 +8,21 @@ const cardHolderName = ['Zachariah', 'Bianka', 'Granville']
 class Filter extends Component {
   state = {
     showSearchInput: false,
-    cardTypeList: [],
+    usersList: [],
     cardHolder: '',
   }
 
   onChangeCardType = event => {
-    const {cardTypeList} = this.state
+    const {usersList} = this.state
     const cardType = event.target.value
-    if (cardTypeList.includes(cardType)) {
-      const index = cardTypeList.indexOf(cardType)
-      cardTypeList.splice(index, 1)
+    if (usersList.includes(cardType)) {
+      const index = usersList.indexOf(cardType)
+      usersList.splice(index, 1)
     } else {
-      cardTypeList.push(cardType)
+      usersList.push(cardType)
     }
-    console.log(cardTypeList)
 
-    this.setState({cardTypeList})
+    this.setState({usersList})
   }
 
   onChangeCardHolder = event => {
@@ -31,22 +30,23 @@ class Filter extends Component {
   }
 
   onApply = () => {
-    const {cardHolder, cardTypeList} = this.state
+    const {cardHolder} = this.state
+    const {usersList} = this.state
 
-    let [cardType1, cardType2] = cardTypeList
+    let [cardTypeSub, cardTypeBur] = usersList
 
-    if (cardType1 === undefined) {
-      cardType1 = ''
-    } else if (cardType2 === undefined) {
-      cardType2 = ''
+    if (cardTypeSub === undefined) {
+      cardTypeSub = ''
+    } else if (cardTypeBur === undefined) {
+      cardTypeBur = ''
     }
 
     const {applyFilters} = this.props
-    applyFilters(cardHolder, cardType1, cardType2)
+    applyFilters(cardHolder, cardTypeSub, cardTypeBur)
   }
 
   onClear = () => {
-    this.setState({cardHolder: '', cardTypeList: []})
+    this.setState({cardHolder: '', usersList: []})
   }
 
   changeSearchIconState = () => {

@@ -34,6 +34,9 @@ class All extends Component {
   getClientsData = async () => {
     const {searchInput, usersList, page} = this.state
 
+    console.log(usersList)
+    console.log(searchInput)
+
     const response = await fetch(
       `https://636f3003f2ed5cb047d748f8.mockapi.io/users_data?page=${page}&limit=10`,
     )
